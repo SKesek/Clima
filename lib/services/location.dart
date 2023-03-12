@@ -9,7 +9,6 @@ class Location {
       LocationPermission locationPermission =
           await Geolocator.requestPermission();
 
-      print(locationPermission);
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.low);
 
